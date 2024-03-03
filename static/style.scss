@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #a2a2a2;
+    font-family: "Roboto", sans-serif;
+        
+}
+.wrap-print {
+    background-color: #fff;
+    width: 60%;
+    margin: 2% auto;
+    border-radius: 20px;
+    padding: 20px;
+
+    ul {
+        list-style: none;
+
+        p {
+            display: inline-block;
+            font-weight: bold;
+
+            span {
+                font-weight: lighter;
+            }
+        }
+        p:first-of-type {
+            display: block;
+        }
+    }
+}
+.wrap-form {
+    background-color: #fff;
+    width: 60%;
+    margin: 2% auto;
+    border-radius: 20px;
+    padding: 20px;
+}

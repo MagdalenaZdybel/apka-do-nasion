@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aplikacja do nasion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="wrap-print">
+        
+            <ul>
+            {% for roslina in rosliny %}
+                <li>
+                    <p><span> Nazwa rośliny: </span> {{ roslina.nazwa }}</p>
+                    <p><span> Data wysiewu: </span> {{ roslina.data_wysiewu }}</p>
+                    <p><span> Do doniczki: </span> {{ roslina.checkbox_do_doniczki }}</p>
+                    <p><span> Do gruntu: </span> {{ roslina.checkbox_do_gruntu }}</p>
+                    <p><span> Data rozsadzania: </span> {{ roslina.data_rozsadzania }}</p>
+                    <p><span> Rodzaj ziemi: </span> {{ roslina.rodzaj_ziemi }}</p>
+                    <p><span> Producent: </span> {{ roslina.producent }}</p>
+                </li>
+            {% endfor %}
+            </ul>
+    </div>
+    
+    <div class="wrap-form">
+        Wprowadź:
+        <form action="">
+            
+        </form>
+    </div>
+</body>
+</html>
